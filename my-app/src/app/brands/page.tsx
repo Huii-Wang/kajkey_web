@@ -1,6 +1,6 @@
 export const metadata = {
   title: '品牌 | 凯键',
-  description: 'KAJKEY 品牌介绍——美国注册商标，深圳龙胜商贸旗下精品工具与配件品牌。',
+  description: 'KAJKEY 品牌介绍——美国注册商标，深圳市泷晟商业有限责任公司旗下精品工具与配件品牌。',
 };
 
 export default function BrandsPage() {
@@ -37,7 +37,7 @@ export default function BrandsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
 
         {/* Brand Story */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section>
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-5">品牌简介</h2>
             <div className="space-y-4 text-gray-600 text-sm leading-8">
@@ -57,23 +57,6 @@ export default function BrandsPage() {
                 确保在最苛刻的使用条件下依然稳定可靠。
               </p>
             </div>
-          </div>
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-gray-900 mb-5">品牌信息</h2>
-            {[
-              { label: '品牌名称', value: 'KAJKEY' },
-              { label: '所属公司', value: '深圳市泷晟商业有限责任公司' },
-              { label: '公司地址', value: '深圳市福田区沙头街道天安社区深南大道6021号喜年中心A座12B20' },
-              { label: '品牌创立', value: '2020 年 4 月' },
-              { label: '美国商标注册', value: '2023 年 1 月 24 日' },
-              { label: '商标注册号', value: 'USPTO Reg. No. 6960021' },
-              { label: '注册类别', value: 'International Class 026' },
-            ].map((item) => (
-              <div key={item.label} className="flex gap-4 py-3 border-b border-gray-100 last:border-0">
-                <span className="text-xs font-medium text-gray-400 w-32 flex-shrink-0 pt-0.5">{item.label}</span>
-                <span className="text-sm text-gray-700">{item.value}</span>
-              </div>
-            ))}
           </div>
         </section>
 
