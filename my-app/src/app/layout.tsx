@@ -12,6 +12,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: "凯键 | 精品工具与配件",
   description: "凯键 - 精品工具与配件供应商，覆盖户外应急、木工工具、海洋固件及工业配件。",
+  icons: { icon: [] },
 };
 
 export default function RootLayout({

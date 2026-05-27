@@ -20,14 +20,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-8 h-8 bg-gray-900 rounded-lg">
-              <span className="text-white text-xs font-black tracking-tight">KJ</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-sm font-bold text-gray-900 tracking-tight">凯键五金</span>
-              <span className="text-[10px] text-gray-400 font-medium tracking-widest uppercase">KAJKEY</span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <span className="text-lg font-black text-gray-900 tracking-widest uppercase">KAJKEY</span>
           </Link>
 
           <nav className="hidden md:flex items-center">

@@ -14,15 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12">
 
           <div className="sm:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <span className="text-gray-900 text-xs font-black">KJ</span>
-              </div>
-              <div className="leading-none">
-                <p className="text-white text-sm font-bold">凯键五金</p>
-                <p className="text-slate-500 text-[10px] tracking-widest uppercase mt-0.5">KAJKEY</p>
-              </div>
-            </div>
+            <p className="text-white text-lg font-black tracking-widest uppercase mb-4">KAJKEY</p>
             <p className="text-sm leading-7 text-slate-400 max-w-xs">
               精品工具与配件供应商，覆盖户外应急、木工、海洋及工业应用场景。
             </p>
