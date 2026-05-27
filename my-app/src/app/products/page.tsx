@@ -1,7 +1,7 @@
 import ProductCard from '@/components/ProductCard';
 
 export const metadata = {
-  title: '产品 | 凯键五金',
+  title: '产品 | 凯键',
   description: '凯键产品目录，涵盖户外应急、木工工具、固定配件及工业精密配件。',
 };
 
@@ -12,6 +12,7 @@ const products = [
     subtitle: 'Set of 4 – Outdoor Portable Hooded Raincoat',
     image: '/images/products/61vVTiXCAXL._AC_SX679_.jpg',
     slug: 'rain-poncho',
+    tag: '户外应急',
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const products = [
     subtitle: '7 Pcs – 6mm Shank, 3/4/5/6/8/10/12 mm',
     image: '/images/products/615f0E9onmL._AC_SL1500_.jpg',
     slug: 'router-cutter-straight',
+    tag: '木工工具',
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const products = [
     subtitle: '62 Sets – Stainless Steel with 2 Fixing Tools',
     image: '/images/products/617-RhJnlJL._AC_SL1000_.jpg',
     slug: 'press-stud-canvas',
+    tag: '海洋固件',
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const products = [
     subtitle: '5 Pcs – 6mm Shank, 6/8/10/12/18 mm',
     image: '/images/products/51suDW10pvL._SL1000_.jpg',
     slug: 'router-cutter-round',
+    tag: '木工工具',
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ const products = [
     subtitle: '150 Pcs / 50 Sets – 15mm, Marine Grade Stainless Steel',
     image: '/images/products/815o0UUBH5L._AC_SL1500_.jpg',
     slug: 'press-stud-screw',
+    tag: '海洋固件',
   },
   {
     id: 6,
@@ -47,22 +52,30 @@ const products = [
     subtitle: '12 Pcs – Brass, for Stove / Grill / Propane',
     image: '/images/products/5112I2QZ0dL._AC_SL1200_.jpg',
     slug: 'lpg-nozzle',
+    tag: '工业配件',
   },
 ];
 
 export default function ProductsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold text-gray-900 mb-3">产品中心</h1>
-        <p className="text-gray-500">共 {products.length} 款产品</p>
+    <div className="bg-white">
+
+      <section className="bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <p className="text-gray-500 text-xs font-semibold tracking-widest uppercase mb-3">Products</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">产品中心</h1>
+          <p className="text-gray-500 text-sm">共 {products.length} 款产品 · 户外应急 / 木工工具 / 海洋固件 / 工业配件</p>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
     </div>
   );
 }
