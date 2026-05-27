@@ -36,18 +36,20 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">公司简介</h2>
             <div className="space-y-4 text-gray-600 text-sm leading-8">
               <p>
-                深圳市泷晟商业有限责任公司（英文：Shenzhen Longsheng Commercial Co., Ltd.）
-                于 <strong className="text-gray-900">2020 年 10 月</strong>在深圳市场监督管理局正式注册成立，
-                注册地位于深圳市南山区，通信地址位于福田区深南大道喜年中心。
+                <strong className="text-gray-900">2020 年 4 月</strong>，自有品牌
+                <strong className="text-gray-900"> KAJKEY </strong>
+                正式投入商业运营，首批产品上线销售。同年 <strong className="text-gray-900">10 月</strong>，
+                深圳市泷晟商业有限责任公司（Shenzhen Longsheng Commercial Co., Ltd.）在深圳市场监督管理局正式注册成立，
+                为品牌的持续发展提供完整的主体支撑。
               </p>
               <p>
                 公司主营电子商务、国内贸易及商品批发零售，经营范围涵盖日用百货、家居用品、工具配件等多品类商品的销售与贸易代理。
-                依托深圳完善的供应链与物流体系，公司持续拓展国内外市场，为终端消费者与企业采购方提供优质产品与服务。
+                依托深圳完善的供应链与物流体系，持续拓展国内外市场，为终端消费者与企业采购方提供优质产品与服务。
               </p>
               <p>
-                公司旗下自有品牌 <strong className="text-gray-900">KAJKEY</strong> 自 2020 年 4 月起投入运营，
-                已于 2023 年 1 月取得美国专利商标局（USPTO）正式注册，产品远销海内外，
-                以"精选材质、专业品控、场景适配"的理念持续赢得用户信赖。
+                KAJKEY 已于 <strong className="text-gray-900">2023 年 1 月</strong>取得美国专利商标局（USPTO）正式注册，
+                注册号 6960021，并于同年 10 月正式入驻亚马逊平台开展跨境电商运营，
+                以"精选材质、专业品控、场景适配"的理念持续赢得海内外用户信赖。
               </p>
             </div>
           </div>
@@ -81,7 +83,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-400 mb-1">地址</p>
-                <p className="text-sm text-gray-800">深圳市福田区沙头街道天安社区深南大道6021号喜年中心A座12B20</p>
+                <p className="text-sm text-gray-800">深圳市南山区招商街道花果山社区工业六路4号兴华工业大厦7栋AB座415A-5</p>
               </div>
             </div>
             <div className="flex items-start gap-4 px-6 py-5">

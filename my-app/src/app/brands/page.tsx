@@ -42,7 +42,7 @@ export default function BrandsPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-5">品牌简介</h2>
             <div className="space-y-4 text-gray-600 text-sm leading-8">
               <p>
-                KAJKEY 由深圳市泷晟商业有限责任公司创立，总部位于深圳市福田区。品牌自
+                KAJKEY 由深圳市泷晟商业有限责任公司创立，总部位于深圳市南山区。品牌自
                 <strong className="text-gray-900"> 2020 年 4 月</strong>起正式投入商业运营，
                 并于 <strong className="text-gray-900">2023 年 1 月</strong>完成美国专利商标局（USPTO）商标注册，
                 注册号 6960021，在美国市场享有正式品牌保护。
