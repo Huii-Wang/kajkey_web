@@ -95,7 +95,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-400 mb-1">电话</p>
-                <p className="text-sm text-gray-800">待填写</p>
+                <p className="text-sm text-gray-800">+86 15170999770</p>
               </div>
             </div>
             <div className="flex items-start gap-4 px-6 py-5">
@@ -107,7 +107,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-400 mb-1">邮箱</p>
-                <p className="text-sm text-gray-800">待填写</p>
+                <a href="mailto:yangbin@longsheng-sz.com" className="text-sm text-blue-600 hover:underline">yangbin@longsheng-sz.com</a>
               </div>
             </div>
           </div>

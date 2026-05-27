@@ -19,9 +19,9 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3">联系我们</h3>
             <ul className="space-y-2 text-sm">
-              <li>电话：待填写</li>
-              <li>邮箱：待填写</li>
-              <li>地址：待填写</li>
+              <li>电话：+86 15170999770</li>
+              <li>邮箱：yangbin@longsheng-sz.com</li>
+              <li>地址：深圳市南山区招商街道花果山社区工业六路4号兴华工业大厦7栋AB座415A-5</li>
             </ul>
           </div>
         </div>
