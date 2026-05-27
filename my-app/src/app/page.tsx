@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import HeroHeading from '@/components/HeroHeading';
 
 const values = [
   {
@@ -43,20 +44,10 @@ export default function HomePage() {
     <div className="bg-white">
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-slate-900 text-white">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '48px 48px' }}
-        />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
+      <section className="hero-animated text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
-              <span className="text-gray-300 text-xs font-semibold tracking-widest uppercase">KAJKEY · 精品工具与配件</span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight mb-6">
-              精选工具与配件，<br />
-              <span className="text-gray-300">覆盖每一个场景</span>
-            </h1>
+            <HeroHeading />
             <p className="text-base sm:text-lg text-slate-300 leading-8 mb-10">
               从户外应急到精密木工，从船舶固件到燃气配件——凯键以严选材质与专业品控，
               为工匠、采购方与终端用户提供可信赖的解决方案。
@@ -163,11 +154,8 @@ export default function HomePage() {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '48px 48px' }}
-        />
-        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-gray-900 text-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mx-auto mb-8">
             <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />

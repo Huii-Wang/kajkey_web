@@ -16,11 +16,8 @@ export default function AboutPage() {
     <div className="bg-white">
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-slate-900 text-white">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '48px 48px' }}
-        />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <p className="text-gray-400 text-xs font-semibold tracking-widest uppercase mb-4">About Us</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-5 leading-tight">
             深圳市泷晟商业<br />有限责任公司

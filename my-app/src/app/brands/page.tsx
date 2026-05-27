@@ -15,11 +15,8 @@ export default function BrandsPage() {
     <div className="bg-white">
 
       {/* Brand Hero */}
-      <section className="relative overflow-hidden bg-slate-900 text-white">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '48px 48px' }}
-        />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
             <div className="flex-shrink-0 w-24 h-24 bg-white rounded-2xl flex items-center justify-center shadow-xl">
               <span className="text-xl font-black text-slate-900 tracking-wider">KAJKEY</span>

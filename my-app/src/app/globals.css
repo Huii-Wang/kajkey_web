@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes hero-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-animated {
+  background: linear-gradient(135deg, #111827, #1f2937, #374151, #1f2937, #111827);
+  background-size: 300% 300%;
+  animation: hero-shift 10s ease infinite;
+}
