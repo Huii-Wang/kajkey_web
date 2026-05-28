@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { getLocale } from "next-intl/server";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "凯键 | 精品工具与配件",
-  description: "凯键 - 精品工具与配件供应商，覆盖户外应急、木工工具、海洋固件及工业配件。",
+  title: "KAJKEY | Premium Tools & Accessories",
+  description: "KAJKEY — Premium tools & accessories supplier covering outdoor emergency, woodworking, marine hardware, and industrial fittings.",
   icons: { icon: [] },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="zh-CN" className={`${geistSans.variable} h-full`}>
-      <body className="min-h-full flex flex-col bg-gray-50 text-gray-900 antialiased">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang={locale} className={`${inter.variable} h-full`}>
+      <body className="min-h-full flex flex-col bg-white text-gray-900 antialiased font-sans">
+        {children}
       </body>
     </html>
   );

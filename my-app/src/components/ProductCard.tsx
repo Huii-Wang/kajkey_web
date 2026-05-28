@@ -36,16 +36,16 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         )}
       </div>
-      <div className="p-4 border-t border-gray-50">
+      <div className="px-4 py-4 border-t border-gray-50">
         {product.tag && (
-          <span className="inline-block text-[11px] font-semibold text-gray-600 bg-gray-100 px-2 py-0.5 rounded-full mb-2">
+          <span className="inline-block text-[10px] font-semibold tracking-[0.12em] uppercase text-gray-400 mb-2">
             {product.tag}
           </span>
         )}
-        <h3 className="text-sm font-semibold text-gray-900 leading-snug mb-1 line-clamp-2">
+        <h3 className="text-sm font-medium text-gray-900 leading-snug mb-1 line-clamp-2">
           {product.name}
         </h3>
-        <p className="text-xs text-gray-400 leading-5">{product.subtitle}</p>
+        <p className="text-[12px] text-gray-400 leading-5 font-light">{product.subtitle}</p>
       </div>
     </div>
   );
